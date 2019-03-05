@@ -1,3 +1,9 @@
+# Angular CLI 使用方法
+##使用 Angular CLI 创建一个名为 heroes 的新组件。
+ ```sh
+ng generate component heroes // 创建一个heroes 组件
+ ```
+
 # AngularTourOfHeroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
