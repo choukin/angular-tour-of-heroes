@@ -4,17 +4,5 @@
   <span class="badge">{{hero.id}}</span> {{hero.name}}
 </li>
 </ul>
-<div *ngIf="selectedHero">
-<h2>
-  {{selectedHero.name|uppercase}}
-</h2>
-<!-- 管道 是格式化字符串、金额、日期和其它显示数据的好办法。 Angular 发布了一些内置管道，而且你还可以创建自己的管道。 -->
-<div >
-  <span>{{selectedHero.id}}</span></div>
-<div>
-  <label for="">name:
-    <input type="text" [(ngModel)]="selectedHero.name" placeholder="name">
-  </label>
-</div>
-</div>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
 
